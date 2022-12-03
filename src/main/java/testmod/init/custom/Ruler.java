@@ -26,8 +26,8 @@ import testmod.inventory.RulerMenu;
 
 public class Ruler extends Item {
 
-    public Ruler(Properties p_41383_) {
-        super(p_41383_);
+    public Ruler(Properties properties) {
+        super(properties);
     }
     @Override
     public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {

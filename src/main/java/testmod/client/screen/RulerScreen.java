@@ -50,11 +50,11 @@ public class RulerScreen  extends AbstractContainerScreen<RulerMenu> implements 
         onClose();
     }
 
-    public boolean keyPressed(int p_97878_, int p_97879_, int p_97880_) {
-        if (p_97878_ == 256) {
+    public boolean keyPressed(int key1, int key2, int key3) {
+        if (key1 == 256) {
             this.minecraft.player.closeContainer();
         }
-        return !this.enterName.keyPressed(p_97878_, p_97879_, p_97880_) && !this.enterName.canConsumeInput() ? super.keyPressed(p_97878_, p_97879_, p_97880_) : true;
+        return !this.enterName.keyPressed(key1, key2, key3) && !this.enterName.canConsumeInput() ? super.keyPressed(key1, key2, key3) : true;
     }
     @Override
     protected void renderBg(PoseStack poseStack, float pPartialTick, int pMouseX, int pMouseY) {

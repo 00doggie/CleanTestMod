@@ -1,5 +1,4 @@
 package testmod.networks.packets;
-import net.minecraft.client.Minecraft;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.minecraft.server.level.ServerLevel;
