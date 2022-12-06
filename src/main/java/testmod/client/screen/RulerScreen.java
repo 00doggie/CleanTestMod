@@ -15,13 +15,15 @@ import testmod.networks.packets.PlayerDistancePacket;
 
 public class RulerScreen  extends AbstractContainerScreen<RulerMenu> implements Button.OnPress {
     private EditBox enterName;
+    public static String playerName;
+
 
     public RulerScreen(RulerMenu menu, Inventory inventory, Component component) {
         super(menu,inventory,component);
     }
 
     public void resize(Minecraft minecraft, int int1, int int2) {
-        String s = this.enterName.getValue();
+         String s = this.enterName.getValue();
         this.init(minecraft, int1, int2);
         this.enterName.setValue(s);
     }
